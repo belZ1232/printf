@@ -1,7 +1,6 @@
 #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
-
 /**
  * _printf - Function printf
  * @format: Formatting
@@ -18,8 +17,6 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(list, format);
-	int get_flags(const char *format, int *i)
-
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
